@@ -21,7 +21,61 @@
       src="https://kit.fontawesome.com/0049b7cd9a.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Weather Application</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logoDiv">
+        <h1 class="log">Logo</h1>
+      </div>
+      <div class="searchBox">
+        <div class="searchDiv">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Address, City or Zip Code"
+          />
+        </div>
+        <div class="searchBtnDiv"><button type="button">Search</button></div>
+      </div>
+      <div class="unitCDiv">
+        <button type="button">
+          <span class="clcToggle">C</span>/ <span class="frhToggle">F</span>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="currentWeatherCard">
+        <div class = "currentHeadingDiv">
+          <h3 class="currentHeading">Current Weather</h3>
+          <h3 class="currentTime">--:--</h3>
+        </div>
+        <div class = "currentTempDivP">
+          <div class="currentIconDiv">
+            <img src="//cdn.weatherapi.com/weather/64x64/night/122.png" alt="WeatherIcon" >
+          </div>
+          <div class="currentTempDiv">
+            <div>
+              <h1 class="currenTemp">37°</h1><span class="unitSpan">C</span>
+            </div>
+            <div class="currentFeelsDiv">
+              <h3 class="currentFeelLike">Real Feels <span class="currentFeels">38°</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class = "currentConditionsDiv">
+          <div>
+            <h4>Wind</h4> <h4 class="currentWind">--Km/h</h4>
+          </div>
+          <div>
+            <h4>Wind Gusts</h4> <h4 class="currenWindGusts">--Km/h</h4>
+          </div>
+          <div>
+            <h4>Air Quality</h4> <h4 class="currentAQ">-----</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
