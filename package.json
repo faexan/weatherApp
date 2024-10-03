@@ -6,11 +6,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack serve",
+    "watch": "webpack watch",
     "deploy": "git subtree push --prefix dist origin gh-pages",
     "write": "prettier . --write"
   },
   "keywords": [],
-  "author": "",
+  "author": "Faizan",
   "license": "ISC",
   "description": "",
   "devDependencies": {
