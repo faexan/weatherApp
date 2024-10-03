@@ -7,6 +7,18 @@ function formatTime(dateString) {
   return formattedTime;
 }
 
+const locationHeading = document.querySelector(".locationText");
+const currentTime = document.querySelector(".currentTime");
+const currentTempNode = document.querySelector(".currentTempValue");
+const currentWeatherIconNode = document.querySelector(".currentWeatherIcon");
+const currentFeelsNode = document.querySelector(".currentFeelsValue");
+const currentConditionNode = document.querySelector(".currentConditon");
+const currentHumidityNode = document.querySelector(".currentHumidityValue");
+const currentWindSpeedNode = document.querySelector(".currentWindSpeedValue");
+const currentWindDirctionNode = document.querySelector(
+  ".currentWindDirectionValue",
+);
+
 function controlCurrentWeatherDOM(
   location,
   dateString,
@@ -18,18 +30,6 @@ function controlCurrentWeatherDOM(
   windSpeed,
   windDir,
 ) {
-  const locationHeading = document.querySelector(".locationText");
-  const currentTime = document.querySelector(".currentTime");
-  const currentTempNode = document.querySelector(".currentTempValue");
-  const currentWeatherIconNode = document.querySelector(".currentWeatherIcon");
-  const currentFeelsNode = document.querySelector(".currentFeelsValue");
-  const currentConditionNode = document.querySelector(".currentConditon");
-  const currentHumidityNode = document.querySelector(".currentHumidityValue");
-  const currentWindSpeedNode = document.querySelector(".currentWindSpeedValue");
-  const currentWindDirctionNode = document.querySelector(
-    ".currentWindDirectionValue",
-  );
-
   const formattedTime = formatTime(dateString, "h:mm a");
 
   currentTime.innerText = formattedTime;
