@@ -1,8 +1,11 @@
 import "./styles.css";
 import "./hourly.css";
+import "./days.css";
 import handleJSON from "./handleJSON";
 import conversionBtn from "./conversionBtn";
-import createHourlyCards from "./hrWCrdDOM";
+import { createHourlyCards } from "./hrWCrdDOM";
+import data1 from "./obj.json";
+import { createDaysCards } from "./daysWCrdDOM";
 
 const searchBox = document.querySelector("#location");
 const searchBtn = document.querySelector(".searchBtn");
@@ -12,10 +15,11 @@ async function getWeather(location) {
   try {
     loadingElement.classList.toggle("loadingDivExpanded");
     const data = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=1&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=3&aqi=no&alerts=no`,
     );
     const result = await data.json();
     handleJSON(result);
+    console.log(result);
     loadingElement.classList.toggle("loadingDivExpanded");
   } catch (error) {
     alert("Error fetching weather data. Please try again.");
@@ -33,5 +37,6 @@ searchBtn.addEventListener("click", () => {
 
 conversionBtn();
 createHourlyCards();
+createDaysCards();
 
 // https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=1&aqi=no&alerts=no

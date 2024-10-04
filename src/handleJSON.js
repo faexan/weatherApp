@@ -1,4 +1,6 @@
-import controlCurrentWeatherDOM from "./cRWeatherDOM";
+import { controlCurrentWeatherDOM } from "./cRWeatherDOM";
+import { daysTodayCard } from "./daysWCrdDOM";
+import { hourlyNowCard, hourlyNowCardsContent } from "./hrWCrdDOM";
 
 function handleJSON(obj) {
   let location = `${obj.location.name}, ${obj.location.region}, ${obj.location.country}`;
@@ -13,6 +15,9 @@ function handleJSON(obj) {
   const condition = obj.current.condition.text;
   const windSpeed = Math.floor(Number(obj.current.wind_kph));
   const windDir = obj.current.wind_dir;
+  const maxTemp = obj.forecast.forecastday[0].day.maxtemp_c;
+  const minTemp = obj.forecast.forecastday[0].day.mintemp_c;
+  const rainChances = obj.forecast.forecastday[0].day.daily_chance_of_rain;
   controlCurrentWeatherDOM(
     location,
     time,
@@ -24,6 +29,9 @@ function handleJSON(obj) {
     windSpeed,
     windDir,
   );
+  hourlyNowCard(icon, currentTemp, condition);
+  hourlyNowCardsContent(obj);
+  daysTodayCard(time, icon, maxTemp, minTemp, condition, rainChances);
 }
 
 export default handleJSON;

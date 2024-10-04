@@ -51,4 +51,4 @@ function controlCurrentWeatherDOM(
   locationHeading.innerText = location;
 }
 
-export default controlCurrentWeatherDOM;
+export { controlCurrentWeatherDOM, formatTime };
