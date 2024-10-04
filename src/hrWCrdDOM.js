@@ -36,7 +36,7 @@ function hourlyNowCardsContent(obj) {
 
     time.innerText = arr[i - 1].time;
     img.src = arr[i - 1].img;
-    temp.innerText = `${arr[i - 1].temperature}°`;
+    temp.innerText = `${Math.floor(Number(arr[i - 1].temperature))}°`;
     cond.innerHTML = arr[i - 1].condition;
 
     timeDiv.appendChild(time);
@@ -67,7 +67,7 @@ function hourlyNowCard(image, temperature, condition) {
 
   time.innerText = "Now";
   img.src = image;
-  temp.innerText = `${temperature}°`;
+  temp.innerText = `${Math.floor(Number(temperature))}°`;
   cond.innerText = condition;
 
   timeDiv.appendChild(time);

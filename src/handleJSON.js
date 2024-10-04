@@ -1,5 +1,5 @@
 import { controlCurrentWeatherDOM } from "./cRWeatherDOM";
-import { daysTodayCard } from "./daysWCrdDOM";
+import { daysCardsDOM, daysTodayCard } from "./daysWCrdDOM";
 import { hourlyNowCard, hourlyNowCardsContent } from "./hrWCrdDOM";
 
 function handleJSON(obj) {
@@ -32,6 +32,7 @@ function handleJSON(obj) {
   hourlyNowCard(icon, currentTemp, condition);
   hourlyNowCardsContent(obj);
   daysTodayCard(time, icon, maxTemp, minTemp, condition, rainChances);
+  daysCardsDOM(obj);
 }
 
 export default handleJSON;
