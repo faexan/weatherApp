@@ -1,114 +1,104 @@
-
 @media only screen and (max-width: 950px) {
-    .logoDiv {
-        padding-left: 40px;
-    }
+  .logoDiv {
+    padding-left: 40px;
+  }
 }
-
 
 @media only screen and (max-width: 865px) {
-    .Next24WeatherCard {
-        width: 650px;
-    }
-    .hourlyCards {
-        width: 150px;
-    }
+  .Next24WeatherCard {
+    width: 650px;
+  }
+  .hourlyCards {
+    width: 150px;
+  }
 }
-
 
 @media only screen and (max-width: 750px) {
-    .daysCard {
-        width: 550px;
-    }
+  .daysCard {
+    width: 550px;
+  }
 
-    #location {
-        width: 200px;
-    }
+  #location {
+    width: 200px;
+  }
 }
-
 
 @media only screen and (max-width: 700px) {
-    .Next24WeatherCard {
-        width: 600px;
-    }
+  .Next24WeatherCard {
+    width: 600px;
+  }
 }
-
 
 @media only screen and (max-width: 610px) {
-    .container {
-        padding: 25px;
-    }
+  .container {
+    padding: 25px;
+  }
 
-    .currentWeatherCard {
-        width: 450px;
-        font-size: 85%;
-    }
-    .Next24WeatherCard {
-        width: 450px;
-    
-    
-    }
+  .currentWeatherCard {
+    width: 450px;
+    font-size: 85%;
+  }
+  .Next24WeatherCard {
+    width: 450px;
+  }
 
-    .tenDaysCardsDiv {
-        font-size: 80%;
-    }
+  .tenDaysCardsDiv {
+    font-size: 80%;
+  }
 
-    .daysCard > div:first-child {
-        font-size: 0.5em;
-        min-width: 90px;
-    }
+  .daysCard > div:first-child {
+    font-size: 0.5em;
+    min-width: 90px;
+  }
 
-    .daysCard > div:nth-child(4) {
-        min-width: 90px;
-        justify-content: center;
-        align-items: center;
-    }
-    .logoDiv, .searchBox {
-        padding-left: 0;
-        margin-top: 5px;
-    }
+  .daysCard > div:nth-child(4) {
+    min-width: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoDiv,
+  .searchBox {
+    padding-left: 0;
+    margin-top: 5px;
+  }
 
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .daysCard {
-        width: 100%;
-    }
-
+  .daysCard {
+    width: 100%;
+  }
 }
 
-
-
 @media only screen and (max-width: 480px) {
-    
-    .daysCard > div:nth-child(4) {
-        display: none;
-    }
+  .daysCard > div:nth-child(4) {
+    display: none;
+  }
 
-    .daysCard {
-        width: 90vw;
-    }
+  .daysCard {
+    width: 90vw;
+  }
 
+  .currentWeatherCard {
+    width: 90vw;
+    font-size: 50%;
+  }
 
-    .currentWeatherCard {
-        width: 90vw;
-        font-size: 50%;
-    }
+  .Next24WeatherCard {
+    width: 90vw;
+  }
 
-    .Next24WeatherCard {
-        width: 90vw;
-    }
-
-    .logoDiv, .searchBox {
-        padding-left: 0;
-        margin-top: 5px;
-    }
-    .currentTempDiv {
-        padding-top: 49px;
-    }
-    .currentTempDivP {
-        margin-right: 25px;
-    }
+  .logoDiv,
+  .searchBox {
+    padding-left: 0;
+    margin-top: 5px;
+  }
+  .currentTempDiv {
+    padding-top: 49px;
+  }
+  .currentTempDivP {
+    margin-right: 25px;
+  }
 }
