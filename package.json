@@ -8,7 +8,9 @@
     "dev": "webpack serve",
     "watch": "webpack watch",
     "deploy": "git subtree push --prefix dist origin gh-pages",
-    "write": "prettier . --write"
+    "write": "prettier . --write",
+    "lint": "eslint ./src/",
+    "lintf": "eslint ./src/ --fix"
   },
   "keywords": [],
   "author": "Faizan",
