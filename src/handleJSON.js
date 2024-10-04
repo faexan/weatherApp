@@ -6,6 +6,8 @@ function handleJSON(obj) {
   let location = `${obj.location.name}, ${obj.location.region}, ${obj.location.country}`;
   if (location.length > 30) {
     location = `${obj.location.name}, ${obj.location.country}`;
+  } else if (obj.location.name === obj.location.region) {
+    location = `${obj.location.name}, ${obj.location.country}`;
   }
   const currentTemp = Math.floor(Number(obj.current.temp_c));
   const { icon } = obj.current.condition;

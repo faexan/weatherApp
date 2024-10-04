@@ -1,17 +1,18 @@
 .Next24WeatherCard {
-    width: 800px;
+    width: 840px;
     height: 385px;
     background-color: var(--cardColor);
     margin-top: 50px;
     border-radius: 5px;
     padding: 20px;
+    color: var(--textColor);
 }
 
 
 .hourlyWeatherHeadingDiv  {
     border-bottom: 1px solid black;
     padding-bottom: 5px;
-    color: rgb(78, 75, 75);
+    color: var(--textColor);
 }
 
 .hourlyWeatherCardDiv {
@@ -31,11 +32,14 @@
 .hourlyCards {
     width: 200px;
     height: 95%;
-    border: 1px solid black;
+    margin-right: 5px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .hourlyCards img {
@@ -51,3 +55,34 @@
     font-size: x-large;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--cardColor);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .hourlyCards:hover,
+.hourlyCards:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.hourlyCards:hover {
+  transform: translateY(-1px);
+}

@@ -1,12 +1,12 @@
 import "./styles.css";
 import "./hourly.css";
 import "./days.css";
+import "./responsive.css";
 import handleJSON from "./handleJSON";
-import conversionBtn from "./conversionBtn";
 import { createHourlyCards } from "./hrWCrdDOM";
 import { createDaysCards } from "./daysWCrdDOM";
+import data1 from "./obj.json";
 
-const searchBox = document.querySelector("#location");
 const searchBtn = document.querySelector(".searchBtn");
 const loadingElement = document.querySelector(".loadingDiv");
 
@@ -18,7 +18,6 @@ async function getWeather(location) {
     );
     const result = await data.json();
     handleJSON(result);
-    console.log(result);
     loadingElement.classList.toggle("loadingDivExpanded");
   } catch (error) {
     alert("Error fetching weather data. Please try again.");
@@ -26,16 +25,24 @@ async function getWeather(location) {
   }
 }
 
-getWeather("Lahore");
-
-searchBtn.addEventListener("click", () => {
+// getWeather("Lahore");
+const searchBox = document.querySelector("#location");
+function handleSubmit() {
   if (searchBox.value !== "") {
     getWeather(searchBox.value.trim());
   }
+}
+
+searchBox.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    handleSubmit();
+  }
 });
 
-conversionBtn();
+searchBtn.addEventListener("click", handleSubmit);
+
 createHourlyCards();
 createDaysCards();
-
+handleJSON(data1);
 // https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=1&aqi=no&alerts=no
