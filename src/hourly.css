@@ -1,83 +1,78 @@
 .Next24WeatherCard {
-    width: 840px;
-    height: 385px;
-    background-color: var(--cardColor);
-    margin-top: 50px;
-    border-radius: 5px;
-    padding: 20px;
-    color: var(--textColor);
+  width: 840px;
+  height: 385px;
+  background-color: var(--cardColor);
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 20px;
+  color: var(--textColor);
 }
 
-
-.hourlyWeatherHeadingDiv  {
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-    color: var(--textColor);
+.hourlyWeatherHeadingDiv {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  color: var(--textColor);
 }
 
 .hourlyWeatherCardDiv {
-    display: flex;
-    width: 4800px;
-    height: 100%;
+  display: flex;
+  width: 4800px;
+  height: 100%;
 }
 
 .hourlyWeatherDisplayDiv {
-    width: 100%;
-    height: 90%;
-    overflow-y: hidden;
-    overflow-x: scroll;
+  width: 100%;
+  height: 90%;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
-
 .hourlyCards {
-    width: 200px;
-    height: 95%;
-    margin-right: 5px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
+  width: 200px;
+  height: 95%;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    padding: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .hourlyCards img {
-    height: 155px;
+  height: 155px;
 }
 
-
 .hourlyCards h3 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .hourlyCards h4 {
-    font-size: x-large;
+  font-size: x-large;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: var(--cardColor);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+  width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--cardColor);
+}
 
-  .hourlyCards:hover,
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hourlyCards:hover,
 .hourlyCards:focus {
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;

@@ -7,17 +7,15 @@
 }
 
 :root {
-  --cardColor: #3C3C3C;
-  --headerColor: #4E4E4E;
-  --searchBTnColor: #FFDA44;
-  --textColor: #D1D1D1;
+  --cardColor: #3c3c3c;
+  --headerColor: #4e4e4e;
+  --searchBTnColor: #ffda44;
+  --textColor: #d1d1d1;
 }
-
 
 body {
   background-color: #353232;
 }
-
 
 .header {
   height: 100px;
@@ -70,7 +68,7 @@ body {
 }
 
 .searchBtnDiv > button:hover {
-  background-color: #FFC300;
+  background-color: #ffc300;
 }
 
 .unitCDiv {
@@ -174,7 +172,7 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   height: 0px;
-  width: 600px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +199,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 
 .clcToggle {
   font-weight: bolder;
