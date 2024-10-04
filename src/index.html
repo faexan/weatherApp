@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="unitCDiv">
-        <button type="button">
+        <button type="button" class="convBtn" data-unit="C">
           <span class="clcToggle">C</span>/ <span class="frhToggle">F</span>
         </button>
       </div>
@@ -52,8 +52,8 @@
     <div class="container">
       <div class="currentWeatherCard">
         <div class="loadingDiv">
-        <div id="loading" class="loading spinner"></div>
-      </div>
+          <div id="loading" class="loading spinner"></div>
+        </div>
         <div class="locationDiv">
           <h1 class="locationText">Lahore, Punjab, Pakistan</h1>
         </div>
@@ -72,7 +72,7 @@
           <div class="currentTempDiv">
             <div>
               <h1 class="currentTemp">
-                <span class="currentTempValue">37</span>°
+                <span class="currentTempValue temp">37</span>°
               </h1>
               <span class="unitSpan">C</span>
             </div>
@@ -80,7 +80,7 @@
               <h3 class="currentFeelLike">
                 Real Feels
                 <span class="currentFeels"
-                  ><span class="currentFeelsValue">38</span>°</span
+                  ><span class="currentFeelsValue temp">38</span>°</span
                 >
               </h3>
             </div>
@@ -98,10 +98,26 @@
           <div>
             <h4>Wind</h4>
             <h4 class="currentWind">
-              <span class="currentWindSpeedValue"></span> Km/h in
-              <span class="currentWindDirectionValue"></span>
+              <span class="currentWindSpeedValue">--</span> Km/h in
+              <span class="currentWindDirectionValue">--</span>
             </h4>
           </div>
+        </div>
+      </div>
+      <div class="Next24WeatherCard">
+        <div class="hourlyWeatherHeadingDiv">
+          <h3 class="hourlyWeatherHeading">HOURLY WEATHER</h3>
+        </div>
+        <div class="hourlyWeatherDisplayDiv">
+        <div class="hourlyWeatherCardDiv"></div>
+      </div>
+      </div>
+      <div class="tenDaysCardsDiv">
+        <div class="tenDaysCardHeadingDiv">
+          <h3 class="tenDaysCardHeading">10-DAY WEATHER FORCAST</h3>
+        </div>
+        <div class="tenDaysCards">
+          
         </div>
       </div>
     </div>

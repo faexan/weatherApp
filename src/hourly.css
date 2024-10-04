@@ -1,0 +1,53 @@
+.Next24WeatherCard {
+    width: 800px;
+    height: 385px;
+    background-color: var(--cardColor);
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.hourlyWeatherHeadingDiv  {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    color: rgb(78, 75, 75);
+}
+
+.hourlyWeatherCardDiv {
+    display: flex;
+    width: 4800px;
+    height: 100%;
+}
+
+.hourlyWeatherDisplayDiv {
+    width: 100%;
+    height: 90%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+.hourlyCards {
+    width: 200px;
+    height: 95%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.hourlyCards img {
+    height: 155px;
+}
+
+
+.hourlyCards h3 {
+    font-size: xx-large;
+}
+
+.hourlyCards h4 {
+    font-size: x-large;
+}
+

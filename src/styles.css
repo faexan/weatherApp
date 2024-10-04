@@ -6,6 +6,12 @@
   text-decoration: none;
 }
 
+:root {
+  --cardColor: rgb(175, 164, 164);
+}
+
+
+
 .header {
   height: 100px;
   background-color: rgb(78, 92, 87);
@@ -68,10 +74,10 @@
 
 .container {
   padding: 50px;
-  height: 100vh;
   background-color: beige;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .currentWeatherCard {
@@ -80,7 +86,7 @@
   grid-template-rows: 1fr 1fr 5fr;
   grid-template-columns: 1fr 1fr;
   width: 600px;
-  background-color: rgb(175, 164, 164);
+  background-color: var(--cardColor);
   padding: 20px;
   height: 250px;
   border-radius: 5px;
@@ -151,10 +157,9 @@
   justify-content: space-evenly;
 }
 
-
 .loadingDiv {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   height: 0px;
   width: 600px;
   display: flex;
@@ -182,4 +187,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.clcToggle {
+  font-weight: bolder;
 }
