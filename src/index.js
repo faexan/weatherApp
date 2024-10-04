@@ -5,7 +5,6 @@ import "./responsive.css";
 import handleJSON from "./handleJSON";
 import { createHourlyCards } from "./hrWCrdDOM";
 import { createDaysCards } from "./daysWCrdDOM";
-import data1 from "./obj.json";
 
 const searchBtn = document.querySelector(".searchBtn");
 const loadingElement = document.querySelector(".loadingDiv");
@@ -25,7 +24,7 @@ async function getWeather(location) {
   }
 }
 
-// getWeather("Lahore");
+getWeather("Lahore");
 const searchBox = document.querySelector("#location");
 function handleSubmit() {
   if (searchBox.value !== "") {
@@ -44,5 +43,4 @@ searchBtn.addEventListener("click", handleSubmit);
 
 createHourlyCards();
 createDaysCards();
-handleJSON(data1);
 // https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=1&aqi=no&alerts=no
