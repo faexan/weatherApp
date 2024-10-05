@@ -9,7 +9,7 @@
 }
 
 .hourlyWeatherHeadingDiv {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffcc00;
   padding-bottom: 5px;
   color: var(--textColor);
 }
@@ -80,4 +80,8 @@
 
 .hourlyCards:hover {
   transform: translateY(-1px);
+}
+
+.hourlyCards h5 {
+  font-weight: 300;
 }

@@ -57,4 +57,9 @@ span + span {
 
 .daysCard:hover {
   transform: translateY(-1px);
+  border-left: 2px solid #ffcc00;
+}
+
+.daysCard > div:first-child h4 {
+  font-weight: 200;
 }
