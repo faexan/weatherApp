@@ -11,6 +11,9 @@
   .hourlyCards {
     width: 150px;
   }
+  .hourlyWeatherCardDiv {
+    width: 3600px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -40,6 +43,10 @@
   }
   .Next24WeatherCard {
     width: 450px;
+  }
+
+  .hourlyCards {
+    font-size: 80%;
   }
 
   .tenDaysCardsDiv {
@@ -83,7 +90,7 @@
 
   .currentWeatherCard {
     width: 90vw;
-    font-size: 50%;
+    font-size: 70%;
   }
 
   .Next24WeatherCard {
@@ -96,9 +103,41 @@
     margin-top: 5px;
   }
   .currentTempDiv {
-    padding-top: 49px;
+    padding-top: 35px;
   }
   .currentTempDivP {
     margin-right: 25px;
+  }
+  .hourlyCards h3 {
+    font-size: x-large;
+  }
+
+  @media screen and (max-width: 380px) {
+    .currentIconDiv > img {
+      max-width: 50px;
+      height: 70px;
+    }
+
+    .currentTempDiv h1 {
+      font-size: 3em;
+    }
+
+    body
+      > div
+      > div.currentWeatherCard
+      > div.currentTempDivP
+      > div.currentTempDiv
+      > div:nth-child(1)
+      > span {
+      padding-bottom: 0;
+    }
+
+    .currentFeelsDiv > h3 {
+      font-size: 90%;
+    }
+
+    .currentTempDiv {
+      padding-top: 40px;
+    }
   }
 }

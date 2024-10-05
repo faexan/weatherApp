@@ -105,7 +105,7 @@ body {
 
 .locationDiv {
   grid-column: 1/3;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffcc00;
   padding-bottom: 5px;
 }
 
@@ -118,6 +118,10 @@ body {
   color: var(--textColor);
 }
 
+.currentHeadingDiv > h3 {
+  font-weight: 400;
+}
+
 .currentTempDivP {
   display: flex;
 }
@@ -127,6 +131,10 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding-bottom: 5px;
+}
+
+.currentConditionsDiv > div > h4 {
+  font-weight: 200;
 }
 
 .currentTempDiv > div:first-child {
