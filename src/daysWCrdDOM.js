@@ -3,7 +3,7 @@ import { format } from "date-fns";
 function createDaysCards() {
   const parentDiv = document.querySelector(".tenDaysCards");
 
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const div = document.createElement("div");
     div.classList.add("daysCard");
     parentDiv.appendChild(div);
@@ -69,7 +69,7 @@ function daysTodayCard(dt, image, maxTemp, minTemp, conditions, rain) {
 function daysCardsDOM(obj) {
   const cards = document.querySelectorAll(".daysCard");
 
-  for (let i = 0; i < 9; i += 1) {
+  for (let i = 1; i < 3; i += 1) {
     const maxTemp = obj.forecast.forecastday[i].day.maxtemp_c;
     const minTemp = obj.forecast.forecastday[i].day.mintemp_c;
     const image = obj.forecast.forecastday[i].day.condition.icon;
@@ -77,7 +77,7 @@ function daysCardsDOM(obj) {
     const conditions = obj.forecast.forecastday[i].day.condition.text;
     const dt = obj.forecast.forecastday[i].date;
 
-    const card = cards[i + 1];
+    const card = cards[i];
     const dayDiv = document.createElement("div");
     const imgDiv = document.createElement("div");
     const tempDiv = document.createElement("div");

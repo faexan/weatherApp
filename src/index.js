@@ -13,7 +13,7 @@ async function getWeather(location) {
   try {
     loadingElement.classList.toggle("loadingDivExpanded");
     const data = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=10&aqi=no&alerts=no`,
+      `http://api.weatherapi.com/v1/forecast.json?key=bd94ca642a5a480fb1a194051240210&q=${location}&days=10&aqi=no&alerts=no`,
     );
     const result = await data.json();
     handleJSON(result);
